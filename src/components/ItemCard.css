@@ -1,0 +1,52 @@
+.itemCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.75rem;
+}
+
+.itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.itemTitle {
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.itemPrice {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tagActive {
+    background-color: #2563eb;
+    color: white;
+}
+
+.tagInactive {
+    background-color: #e5e7eb;
+    color: #374151;
+}

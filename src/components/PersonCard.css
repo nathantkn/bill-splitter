@@ -1,0 +1,49 @@
+.personCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1fae5;
+}
+
+.personName {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.itemList {
+    margin-bottom: 0.75rem;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.totalsSection {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.5rem;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.taxRow {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.grandTotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.25rem;
+}
