@@ -1,0 +1,269 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+    padding: 1rem;
+}
+
+.mainCard {
+    max-width: 64rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(90deg, #2563eb 0%, #4f46e5 100%);
+  padding: 1.5rem;
+  color: white;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.headerSubtitle {
+  color: #bfdbfe;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.section {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonPrimary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.buttonSecondary {
+  background-color: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.flexRow {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.flexGrow {
+    flex: 1;
+}
+
+.itemCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.75rem;
+}
+
+.itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.itemTitle {
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.itemPrice {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tagActive {
+    background-color: #2563eb;
+    color: white;
+}
+
+.tagInactive {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.resultsSection {
+    background: linear-gradient(90deg, #f0fdf4 0%, #ecfdf5 100%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bbf7d0;
+}
+
+.resultsTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #166534;
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.personCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1fae5;
+}
+
+.personName {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.itemList {
+    margin-bottom: 0.75rem;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.totalsSection {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.5rem;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.grandTotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.25rem;
+}
+
+.summaryCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1fae5;
+}
+
+.iconButton {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.deleteButton {
+    color: #dc2626;
+}
+
+.addButton {
+    background-color: #16a34a;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
