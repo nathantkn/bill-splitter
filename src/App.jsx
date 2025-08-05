@@ -18,7 +18,8 @@ const BillSplitter = () => {
   // Chicago tax rates
   const TAX_RATES = {
     restaurant: 0.1075,
-    grocery: 0.025
+    grocery: 0.0225,
+    appliance: 0.1025
   };
 
   const addPerson = () => {
@@ -50,8 +51,15 @@ const BillSplitter = () => {
       id: Date.now(),
       name,
       price: parseFloat(price),
-      assignedTo: []
+      assignedTo: [],
+      taxType: billType // Default to current bill type
     }]);
+  };
+
+  const updateItemTaxType = (itemId, taxType) => {
+    setItems(items.map(item => 
+      item.id === itemId ? { ...item, taxType } : item
+    ));
   };
 
   const removeItem = (id) => {
@@ -87,21 +95,26 @@ const BillSplitter = () => {
     items.forEach(item => {
       if (item.assignedTo.length > 0) {
         const pricePerPerson = item.price / item.assignedTo.length;
+        const itemTaxRate = TAX_RATES[item.taxType || billType];
+        const taxPerPerson = pricePerPerson * itemTaxRate;
+        
         item.assignedTo.forEach(personIndex => {
           if (personIndex < results.length) {
             results[personIndex].items.push({
               name: item.name,
-              price: pricePerPerson
+              price: pricePerPerson,
+              tax: taxPerPerson,
+              taxType: item.taxType || billType
             });
             results[personIndex].subtotal += pricePerPerson;
+            results[personIndex].tax += taxPerPerson;
           }
         });
       }
     });
 
-    // Calculate tax and total for each person
+    // Calculate total for each person
     results.forEach(person => {
-      person.tax = person.subtotal * TAX_RATES[billType];
       person.total = person.subtotal + person.tax;
     });
 
@@ -152,6 +165,8 @@ const BillSplitter = () => {
             addItem={addItem}
             removeItem={removeItem}
             togglePersonAssignment={togglePersonAssignment}
+            updateItemTaxType={updateItemTaxType}
+            taxRates={TAX_RATES}
           />
           
           <BillResults

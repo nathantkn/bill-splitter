@@ -22,6 +22,12 @@ const BillTypeSelector = ({ billType, setBillType }) => {
         >
           Grocery (2.25% tax)
         </button>
+        <button
+          onClick={() => setBillType('appliance')}
+          className={`button ${billType === 'appliance' ? 'buttonPrimary' : 'buttonSecondary'}`}
+        >
+          Appliance (10.25% tax)
+        </button>
       </div>
     </div>
   );

@@ -8,7 +8,9 @@ const ItemsManager = ({
   validPeople,
   addItem,
   removeItem,
-  togglePersonAssignment
+  togglePersonAssignment,
+  updateItemTaxType,
+  taxRates
 }) => {
   const [newItemName, setNewItemName] = useState('');
   const [newItemPrice, setNewItemPrice] = useState('');
@@ -59,6 +61,8 @@ const ItemsManager = ({
             validPeople={validPeople}
             removeItem={removeItem}
             togglePersonAssignment={togglePersonAssignment}
+            updateItemTaxType={updateItemTaxType}
+            taxRates={taxRates}
           />
         ))}
       </div>
